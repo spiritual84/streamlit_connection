@@ -76,6 +76,9 @@ for index, row in weatherData.iterrows():
     elif row['forecast'] == 'Fair & Warm':
         set_icon = "fa-sun"
         set_color = "orange"
+    elif row['forecast'] == 'Fair Day':
+        set_icon = "fa-sun"
+        set_color = "orange"
     elif row['forecast'] == 'Fair (Night)':
         set_icon = "moon"
         set_color = "black"
