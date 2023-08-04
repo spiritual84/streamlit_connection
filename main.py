@@ -2,6 +2,7 @@
 import string
 from typing import Tuple, AnyStr
 from datetime import datetime
+from zoneinfo import ZoneInfo
 import streamlit as st
 import pandas as pd
 from streamlit.connections import ExperimentalBaseConnection
@@ -25,7 +26,7 @@ class sgWeatherConnection(ExperimentalBaseConnection["sgWeatherConnection"]):
 
 st.write("2-hour Weather Forecast in Singapore")
 
-nowtime = datetime.now()
+nowtime = datetime.now(tz=ZoneInfo("Asia/Singapore"))
 
 d_time = nowtime
 
