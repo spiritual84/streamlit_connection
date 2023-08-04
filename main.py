@@ -36,4 +36,4 @@ conn = st.experimental_connection('sgweather', type=sgWeatherConnection)
 (startDate,endDate,weatherData) = conn.query(d_time)
 
 st.write(startDate.strftime("%d/%m/%Y, %H:%M:%S")+" to "+endDate.strftime("%d/%m/%Y, %H:%M:%S"))
-st.write(weatherData)
+st.dataframe(data=weatherData,use_container_width=True,hide_index=True)
