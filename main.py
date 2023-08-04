@@ -1,13 +1,10 @@
 
-import string
-from typing import Tuple, AnyStr
+from typing import Tuple
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import streamlit as st
 import pandas as pd
 from streamlit.connections import ExperimentalBaseConnection
-from streamlit.runtime.caching import cache_data
-import json
 import requests
 
 class sgWeatherConnection(ExperimentalBaseConnection["sgWeatherConnection"]):
