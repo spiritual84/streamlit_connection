@@ -58,8 +58,17 @@ for index, row in weatherData.iterrows():
     elif row['forecast'] == 'Light Showers':
         set_icon = "fa-cloud-rain"
         set_color = "blue"
-    elif row['forecast'] == 'Thundery Showers':
+    elif row['forecast'] == 'Moderate Rain':
         set_icon = "fa-cloud-showers-heavy"
+        set_color = "blue"
+    elif row['forecast'] == 'Showers':
+        set_icon = "fa-cloud-showers-heavy"
+        set_color = "blue"
+    elif row['forecast'] == 'Thundery Showers':
+        set_icon = "fa-cloud-showers-water"
+        set_color = "grey"
+    elif row['forecast'] == 'Heavy Thundery Showers':
+        set_icon = "fa-cloud-showers-water"
         set_color = "grey"
     elif row['forecast'] == 'Cloudy':
         set_icon = "fa-cloud"
